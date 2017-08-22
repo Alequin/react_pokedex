@@ -5,12 +5,12 @@ class Profile extends React.Component{
   render(){
     return (
       <div>
-        <h2 className="name">Bulbasaur</h2>
+        <h2 className="name">{this.props.name}</h2>
         <div className="health-container">
           <p>HP:</p>
           <div></div>
         </div>
-        <p className="health">10/10</p>  
+        <p className="health">{this.props.health}/{this.props.health}</p>
       </div>
     );
   }

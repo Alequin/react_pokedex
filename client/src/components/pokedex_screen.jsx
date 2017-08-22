@@ -10,7 +10,7 @@ class PokedexScreen extends React.Component{
     return (
       <div className="pokedex-container">
         <img className="pokemon-sprite" src={this.props.pokemon.sprite}></img>
-        <Profile/>
+        <Profile name={this.props.pokemon.name} health={this.props.pokemon.hp}/>
         <Stats/>
         <Type/>
       </div>

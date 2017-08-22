@@ -11,14 +11,14 @@ class Pokedex extends React.Component{
     super(props);
     this.state = {
       pokemon: {
-        sprite: "./1.png",
-        name: "",
-        hp: "",
-        attack: "",
-        defence: "",
-        speed: "",
-        special: "",
-        type: "",
+        sprite: "./pika_shadow.png",
+        name: "N/A",
+        hp: "0",
+        attack: "0",
+        defence: "0",
+        speed: "0",
+        special: "0",
+        type: "N/A",
       }
     }
     this.updatePokemon = this.updatePokemon.bind(this);
