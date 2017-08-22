@@ -12,20 +12,20 @@ class PokemonSelect extends React.Component{
   }
 
   componentDidMount(){
-    const request = new XMLHttpRequest();
-    makeGetRequest(
-      request,
-      "http://pokeapi.co/api/v2/pokemon/?limit=151&offset=0",
-      () => {
-        if(request.status !== 200) return;
-
-        const jsonString = request.responseText;
-        const pokemon = JSON.parse(jsonString);
-        this.setState({
-          pokemon: pokemon.results,
-        });
-      }
-    )
+    // const request = new XMLHttpRequest();
+    // makeGetRequest(
+    //   request,
+    //   "http://pokeapi.co/api/v2/pokemon/?limit=151&offset=0",
+    //   () => {
+    //     if(request.status !== 200) return;
+    //
+    //     const jsonString = request.responseText;
+    //     const pokemon = JSON.parse(jsonString);
+    //     this.setState({
+    //       pokemon: pokemon.results,
+    //     });
+    //   }
+    // )
   }
 
   handleSelectPokemonChange(event){
