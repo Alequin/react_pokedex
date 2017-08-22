@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PokemonSelect from "./pokemon-select"
+import PokemonSelect from "./../components/pokemon-select"
 
 class Pokedex extends React.Component{
 
