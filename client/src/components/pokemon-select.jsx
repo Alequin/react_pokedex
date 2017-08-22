@@ -8,6 +8,7 @@ class PokemonSelect extends React.Component{
     this.state = {
       pokemon: []
     }
+    this.handleSelectPokemonChange = this.handleSelectPokemonChange.bind(this);
   }
 
   componentDidMount(){
@@ -27,8 +28,12 @@ class PokemonSelect extends React.Component{
     )
   }
 
-  render(){
+  handleSelectPokemonChange(event){
+    const index = event.target.value;
+    this.props.onSelectedPokemonChange(index);
+  }
 
+  render(){
 
     const pokemonOptions = this.state.pokemon.map((pokemon, index) => {
       return <option key={index} value={index+1}>{pokemon.name}</option>
@@ -36,7 +41,8 @@ class PokemonSelect extends React.Component{
 
     return (
       <div className="pokemon-select-container">
-        <select>
+        <select onChange={this.handleSelectPokemonChange}>
+          <option disabled>Select a Pokemon</option>
           {pokemonOptions}
         </select>
       </div>
