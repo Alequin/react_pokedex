@@ -2,6 +2,7 @@ import React from 'react';
 
 import Profile from "./profile"
 import Stats from "./stats"
+import Type from "./type"
 
 class PokedexScreen extends React.Component{
 
@@ -11,6 +12,7 @@ class PokedexScreen extends React.Component{
         <img className="pokemon-sprite" src="./1.png"></img>
         <Profile/>
         <Stats/>
+        <Type/>
       </div>
     );
   }
