@@ -1,5 +1,4 @@
-function makeGetRequest(url, onRequestLoad){
-  const request = new XMLHttpRequest();
+function makeGetRequest(request, url, onRequestLoad){
   request.addEventListener("load", onRequestLoad)
   request.open("GET", url);
   request.send();
