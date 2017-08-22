@@ -1,4 +1,11 @@
 
+.pokemon-select-container{
+  margin: auto;
+  width: 800px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .pokedex-container{
   background: url("pokedex.png");
   margin: auto;
@@ -15,10 +22,47 @@
   top: -20px;
 }
 
+.name{
+  position: relative;
+  left: 490px;
+  top: -240px;
+}
+
+.health-container{
+  position: relative;
+  display: flex;
+  margin: 0;
+  width: 170px;
+  left: 450px;
+  top: -240px;
+}
+
+.health-container p{
+  margin: 0;
+  flex: 1;
+}
+
+.health-container div{
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+  flex: 9;
+  height: 10px;
+  width: 200px;
+  background: grey;
+}
+
+.health{
+  position: relative;
+  left: 520px;
+  top: -250px;
+  font-size: 20px;
+}
+
 .stats-container{
   position: relative;
-  top: 170px;
-  left: 80px;
+  top: -175px;
+  left: 335px;
   display: inline-block;
 }
 
@@ -28,5 +72,22 @@
 }
 
 .attack-stat{
-  margin-bottom: 32px;
+  margin-bottom: 30px;
+}
+
+.type-container{
+  display: inline-block;
+  position: relative;
+  bottom: 260px;
+  left: 460px;
+}
+
+.type-container h3{
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+.type-container p{
+  font-size: 25px;
+  margin: 0;
 }
