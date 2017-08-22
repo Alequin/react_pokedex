@@ -1,10 +1,12 @@
 import React from 'react';
 
+import PokemonSelect from "./pokemon-select"
+
 class Pokedex extends React.Component{
 
   render(){
     return (
-      <p>Hello</p>
+      <PokemonSelect/>
     );
   }
 
