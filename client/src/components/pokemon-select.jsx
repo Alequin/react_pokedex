@@ -1,4 +1,5 @@
 import React from 'react';
+import makeGetRequest from "./../models/make_get_request";
 
 class PokemonSelect extends React.Component{
 
@@ -10,8 +11,9 @@ class PokemonSelect extends React.Component{
   }
 
   componentDidMount(){
-    const request = new XMLHttpRequest();
-    request.addEventListener("load", () => {
+    makeGetRequest(
+      "http://pokeapi.co/api/v2/pokemon/?limit=151&offset=0",
+      () => {
         if(request.status !== 200) return;
 
         const jsonString = request.responseText;
@@ -21,8 +23,6 @@ class PokemonSelect extends React.Component{
         });
       }
     )
-    request.open("GET", "http://pokeapi.co/api/v2/pokemon/?limit=151&offset=0");
-    request.send();
   }
 
   render(){
