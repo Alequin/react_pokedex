@@ -17,7 +17,7 @@ class PokemonSelect extends React.Component{
         const jsonString = request.responseText;
         const pokemon = JSON.parse(jsonString);
         this.setState({
-          pokemon: pokemon,
+          pokemon: pokemon.results,
         });
       }
     )
@@ -28,12 +28,17 @@ class PokemonSelect extends React.Component{
   render(){
 
 
-    const pokemonOptions = pokemonObject.results.map((pokemon) => {
-      return <option></option>
+    const pokemonOptions = this.state.pokemon.map((pokemon, index) => {
+      return <option key={index} value={index+1}>{pokemon.name}</option>
     });
 
     return (
-      <p>Hello</p>
+      <div className="pokemon-select-container">
+        <select>
+          {pokemonOptions}
+        </select>
+      </div>
+
     );
   }
 
