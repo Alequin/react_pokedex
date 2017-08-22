@@ -6,7 +6,7 @@ class Type extends React.Component{
     return (
       <div className="type-container">
         <h3>Type</h3>
-        <p>Grass</p>
+        <p>{this.props.type}</p>
       </div>
     );
   }

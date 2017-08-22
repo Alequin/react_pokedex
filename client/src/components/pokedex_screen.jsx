@@ -15,7 +15,7 @@ class PokedexScreen extends React.Component{
           attack={pokemon.attack} defence={pokemon.defence}
           speed={pokemon.speed} special={pokemon.special}
         />
-        <Type/>
+        <Type type={pokemon.type}/>
       </div>
     );
   }
