@@ -6,12 +6,15 @@ import Type from "./type"
 
 class PokedexScreen extends React.Component{
   render(){
-    console.log("render");
+    const pokemon = this.props.pokemon;
     return (
       <div className="pokedex-container">
-        <img className="pokemon-sprite" src={this.props.pokemon.sprite}></img>
-        <Profile name={this.props.pokemon.name} health={this.props.pokemon.hp}/>
-        <Stats/>
+        <img className="pokemon-sprite" src={pokemon.sprite}></img>
+        <Profile name={pokemon.name} health={pokemon.hp}/>
+        <Stats
+          attack={pokemon.attack} defence={pokemon.defence}
+          speed={pokemon.speed} special={pokemon.special}
+        />
         <Type/>
       </div>
     );
