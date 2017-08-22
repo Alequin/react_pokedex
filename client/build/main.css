@@ -1,0 +1,32 @@
+
+.pokedex-container{
+  background: url("pokedex.png");
+  margin: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 800px;
+}
+
+.pokemon-sprite{
+  position: relative;
+  width: 250px;
+  left: 140px;
+  top: -20px;
+}
+
+.stats-container{
+  position: relative;
+  top: 170px;
+  left: 80px;
+  display: inline-block;
+}
+
+.stats-container p{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.attack-stat{
+  margin-bottom: 32px;
+}
