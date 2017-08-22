@@ -8,13 +8,13 @@ class Pokedex extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      selectedPokemonIndex: -1
+      selectedPokemonNumber: -1
     }
     this.updatePokemon = this.updatePokemon.bind(this);
   }
 
-  updatePokemon(index){
-    this.setState({selectedPokemonIndex: index});
+  updatePokemon(number){
+    this.setState({selectedPokemonNumber: number});
   }
 
   render(){

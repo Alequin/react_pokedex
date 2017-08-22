@@ -29,8 +29,8 @@ class PokemonSelect extends React.Component{
   }
 
   handleSelectPokemonChange(event){
-    const index = event.target.value;
-    this.props.onSelectedPokemonChange(index);
+    const pokemonNumber = event.target.value;
+    this.props.onSelectedPokemonChange(pokemonNumber);
   }
 
   render(){
